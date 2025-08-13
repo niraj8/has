@@ -72,3 +72,7 @@ check:
 	@shellcheck has
 
 .PHONY: check
+
+go-test:
+	@go build pkg/has.go
+	@make unit-test
